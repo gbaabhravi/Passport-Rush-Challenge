@@ -1,0 +1,79 @@
+/* Motion & Keyframes */
+@keyframes flyAcross {
+  0% { transform: translate(-100px, 120vh) rotate(32deg); }
+  100% { transform: translate(110vw, -100px) rotate(32deg); }
+}
+
+@keyframes reelBlur {
+  0% { transform: translateY(-30px); opacity: 0.2; filter: blur(4px); }
+  50% { transform: translateY(0); opacity: 1; filter: blur(0); }
+  100% { transform: translateY(30px); opacity: 0.2; filter: blur(4px); }
+}
+
+@keyframes lockImpact {
+  0% { transform: scale(1.4); }
+  70% { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+
+@keyframes stampDown {
+  0% {
+    opacity: 0;
+    transform: scale(2.8) rotate(-28deg);
+  }
+  100% {
+    opacity: 0.92;
+    transform: scale(1) rotate(-12deg);
+  }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes characterWave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(14deg); }
+  75% { transform: rotate(-10deg); }
+}
+
+@keyframes pulseSubtle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.shake-screen {
+  animation: screenJolt 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes screenJolt {
+  10%, 90% { transform: translate3d(-2px, 0, 0); }
+  20%, 80% { transform: translate3d(3px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-5px, 0, 0); }
+  40%, 60% { transform: translate3d(5px, 0, 0); }
+}
+
+.reels-spinning {
+  animation: reelBlur 0.08s infinite linear;
+}
+
+.letter-locked {
+  animation: lockImpact 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.character-animated-arm {
+  transform-origin: bottom left;
+  animation: characterWave 1.4s infinite ease-in-out;
+}
+
+/* Accessibility: Strict Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .floating-plane { display: none; }
+}
