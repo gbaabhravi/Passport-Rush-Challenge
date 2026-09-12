@@ -25,26 +25,6 @@
 
 ---
 
-## 🚀 How to Deploy
-
-### 1. GitHub Pages (Free)
-1. Push your project files to a GitHub repository.
-2. In your repository, go to **Settings** > **Pages**.
-3. Under **Source**, select `Deploy from a branch`.
-4. Choose `main` (or `master`) and folder `/ (root)`.
-5. Click **Save**. Your site will be live at `https://<username>.github.io/<repo-name>/`.
-
-### 2. Netlify (Drag and Drop)
-1. Go to [app.netlify.com](https://app.netlify.com/).
-2. Drag and drop the `passport-rush` folder into the Netlify dashboard.
-3. Your game is live in seconds.
-
-### 3. Vercel
-1. Install Vercel CLI via `npm i -g vercel` or link your GitHub repo at [vercel.com](https://vercel.com).
-2. Deploy with zero configuration (it automatically detects pure static HTML).
-
----
-
 ## ⚙️ Game Customization & Tuning
 
 ### Changing the Timer Limit
