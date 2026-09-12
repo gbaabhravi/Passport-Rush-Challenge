@@ -1,0 +1,72 @@
+:root {
+  /* Dynamic Palette: Night Travel / Dark (Default) */
+  --bg-space: #090d16;
+  --bg-surface: #121a2d;
+  --bg-surface-glass: rgba(18, 26, 45, 0.78);
+  --bg-surface-elevated: #1b2640;
+  
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-prominent: rgba(255, 255, 255, 0.18);
+  --border-focus: #38bdf8;
+
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-inverse: #0f172a;
+
+  /* Travel Accents */
+  --accent-gold: #fbbf24;
+  --accent-cyan: #38bdf8;
+  --accent-emerald: #34d399;
+  --accent-ruby: #f43f5e;
+  
+  --p1-color: #38bdf8;
+  --p1-glow: rgba(56, 189, 248, 0.35);
+  --p2-color: #f472b6;
+  --p2-glow: rgba(244, 114, 182, 0.35);
+
+  --grid-dot: rgba(255, 255, 255, 0.15);
+  --grid-line: rgba(255, 255, 255, 0.03);
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 16px 32px -4px rgba(0, 0, 0, 0.5);
+  --glass-blur: blur(14px);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Light Theme: Paper Passport / Daytime Flight */
+body[data-theme="light"] {
+  --bg-space: #f1f5f9;
+  --bg-surface: #ffffff;
+  --bg-surface-glass: rgba(255, 255, 255, 0.88);
+  --bg-surface-elevated: #f8fafc;
+
+  --border-subtle: rgba(15, 23, 42, 0.1);
+  --border-prominent: rgba(15, 23, 42, 0.2);
+  --border-focus: #0284c7;
+
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-inverse: #ffffff;
+
+  --accent-gold: #d97706;
+  --accent-cyan: #0284c7;
+  --accent-emerald: #059669;
+  --accent-ruby: #e11d48;
+
+  --p1-color: #0284c7;
+  --p1-glow: rgba(2, 132, 199, 0.2);
+  --p2-color: #db2777;
+  --p2-glow: rgba(219, 39, 119, 0.2);
+
+  --grid-dot: rgba(15, 23, 42, 0.12);
+  --grid-line: rgba(15, 23, 42, 0.04);
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 16px 32px -4px rgba(0, 0, 0, 0.12);
+}

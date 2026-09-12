@@ -1,0 +1,64 @@
+@media (max-width: 768px) {
+  .app-viewport {
+    padding: 0.5rem;
+  }
+
+  .main-title {
+    font-size: 1.75rem;
+  }
+
+  .player-input-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .vs-divider {
+    display: none;
+  }
+
+  .hud-bar {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "center center"
+      "p1 p2";
+    gap: 0.75rem;
+  }
+
+  .hud-centerpiece {
+    grid-area: center;
+    justify-content: center;
+  }
+
+  #p1-card { grid-area: p1; }
+  #p2-card { grid-area: p2; }
+
+  .player-card {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .player-name {
+    max-width: 90px;
+    font-size: 0.85rem;
+  }
+
+  .visa-body {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .country-dossier {
+    text-align: left;
+  }
+
+  .game-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .round-actions, .final-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
